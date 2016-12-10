@@ -161,7 +161,7 @@ type tweet struct {
 }
 
 func main() {
-	errsChan := periodicTweets(24 * time.Hour)
+	errsChan := periodicTweets(6 * time.Hour)
 	for err := range errsChan {
 		if err != nil {
 			log.Printf("%v\n", err)
