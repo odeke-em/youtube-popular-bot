@@ -1,0 +1,66 @@
+{
+	"ImportPath": "github.com/odeke-em/youtube-popular-bot",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v60",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/ChimeraCoder/anaconda",
+			"Rev": "00ecb7b4510497dc28cd46a598007ab8fe01f889"
+		},
+		{
+			"ImportPath": "github.com/ChimeraCoder/tokenbucket",
+			"Rev": "c5a927568de7aad8a58127d80bcd36ca4e71e454"
+		},
+		{
+			"ImportPath": "github.com/azr/backoff",
+			"Rev": "53511d3c733003985b0b76f733df1f4d0095ee6a"
+		},
+		{
+			"ImportPath": "github.com/dustin/go-jsonpointer",
+			"Rev": "ba0abeacc3dcca5b9b20f31509c46794edbc9965"
+		},
+		{
+			"ImportPath": "github.com/dustin/gojson",
+			"Rev": "2e71ec9dd5adce3b168cd0dbde03b5cc04951c30"
+		},
+		{
+			"ImportPath": "github.com/garyburd/go-oauth/oauth",
+			"Rev": "1dd5f05ec64cbda548d22836ceb6cc7ae749c2ee"
+		},
+		{
+			"ImportPath": "github.com/odeke-em/youtube",
+			"Rev": "03d652b2238a27f9c18f54435b79d8dcdd83d49b"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "c46f265c325130a7a6c7b27db8c6fe14b64f1a68"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context/ctxhttp",
+			"Rev": "c46f265c325130a7a6c7b27db8c6fe14b64f1a68"
+		},
+		{
+			"ImportPath": "google.golang.org/api/gensupport",
+			"Rev": "663fefdcec4e1ec9033ba302202321d3bff5fe6d"
+		},
+		{
+			"ImportPath": "google.golang.org/api/googleapi",
+			"Rev": "663fefdcec4e1ec9033ba302202321d3bff5fe6d"
+		},
+		{
+			"ImportPath": "google.golang.org/api/googleapi/internal/uritemplates",
+			"Rev": "663fefdcec4e1ec9033ba302202321d3bff5fe6d"
+		},
+		{
+			"ImportPath": "google.golang.org/api/googleapi/transport",
+			"Rev": "663fefdcec4e1ec9033ba302202321d3bff5fe6d"
+		},
+		{
+			"ImportPath": "google.golang.org/api/youtube/v3",
+			"Rev": "663fefdcec4e1ec9033ba302202321d3bff5fe6d"
+		}
+	]
+}
