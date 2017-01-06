@@ -12,6 +12,7 @@ import (
 	"github.com/odeke-em/youtube"
 
 	"github.com/ChimeraCoder/anaconda"
+	"github.com/dustin/go-humanize"
 )
 
 var (
@@ -136,10 +137,13 @@ func periodicTweets(period time.Duration) chan error {
 	return errsChan
 }
 
-const tweetTmplStr = `Rank #{{.Rank}} Views: {{.ViewCount}} Title: {{.Title}} {{youtubeURL .YouTubeId}}`
+const tweetTmplStr = `#{{.Rank}}: {{commafy .ViewCount}} views {{.Title}} {{youtubeURL .YouTubeId}}`
 
 var tmplFuncs = template.FuncMap{
 	"youtubeURL": func(id string) string { return fmt.Sprintf("https://youtu.be/%s", id) },
+	"commafy": func(views uint64) string {
+		return humanize.Comma(int64(views))
+	},
 }
 var tweetTemplate = template.Must(template.New("tweet").Funcs(tmplFuncs).Parse(tweetTmplStr))
 
